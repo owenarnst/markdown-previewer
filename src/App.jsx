@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import '../styles/App.css'
 import { marked } from 'marked'
+import DOMPurify from 'dompurify'
 
 //light and dark theme colors
 const lightTheme = {
