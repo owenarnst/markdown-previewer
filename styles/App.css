@@ -1,0 +1,133 @@
+main {
+  padding-top: 20px;
+  display: grid;
+  row-gap: 30px;
+}
+main > div > h1 {
+  text-align: center;
+}
+
+#main-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+#main-content #preview {
+  font-family: sans-serif;
+  border: solid 1px;
+  overflow: auto;
+}
+#main-content #preview > * {
+  margin-bottom: 20px;
+}
+#main-content #preview.prev-dark pre {
+  background-color: white;
+  color: black;
+}
+#main-content #preview.prev-dark code {
+  background-color: white;
+  color: black;
+}
+#main-content pre {
+  color: #26ec10;
+  background-color: black;
+  line-height: 25px;
+  padding: 10px;
+}
+#main-content code {
+  color: #26ec10;
+  background-color: black;
+}
+#main-content textarea {
+  resize: none;
+}
+#main-content textarea:focus {
+  outline: none;
+}
+#main-content h1 {
+  border-bottom: 3px solid black;
+}
+#main-content h2 {
+  border-bottom: 1px solid black;
+}
+#main-content img {
+  width: 100%;
+  height: auto;
+}
+#main-content ul, #main-content ol {
+  margin-left: 30px;
+}
+#main-content #editor-container, #main-content #preview-container {
+  width: 48%;
+  height: 90%;
+  border-radius: 10px;
+  border: solid 2px;
+  overflow-y: auto;
+}
+#main-content #editor-container > p, #main-content #preview-container > p {
+  display: grid;
+  align-items: center;
+  border-bottom: solid 2px;
+  height: 40px;
+  padding-left: 30px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+#main-content #editor-container {
+  overflow: hidden;
+}
+#main-content textarea, #main-content #preview {
+  padding: 30px;
+  width: 100%;
+  border: none;
+  height: calc(100% - 40px);
+}
+#main-content table {
+  text-align: left;
+  border-collapse: collapse;
+}
+#main-content table td, #main-content table th {
+  padding: 5px;
+  border: solid;
+}
+
+.sliding-button {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 80px;
+  height: 36px;
+  background-color: #000;
+  color: #3bba9c;
+  border: none;
+  border-radius: 15px;
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background-color 0.2s ease-in-out;
+  text-align: right;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.slider {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.dark {
+  background-color: #3bba9c; /* Adjust color for checked state */
+  color: #fff;
+  text-align: left;
+}
+
+.dark .slider {
+  transform: translateX(44px); /* Adjust sliding distance */
+}/*# sourceMappingURL=App.css.map */
